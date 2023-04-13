@@ -15,7 +15,7 @@ class SystemUser{
         return $(this.recordsContainerLocators);
     }
     get userNameRecord(){
-        return $("//div[contains(text(),'Pauastt')]");
+        return $("//div[contains(text(),'Paule01010')]");
     }
     get recordRole(){
         return $$(".oxd-table-cell.oxd-padding-cell")[2];
@@ -36,6 +36,8 @@ class SystemUser{
     get successMessage(){
         return $('[aria-live=\'assertive\']')
     }
-    
+    get noResultsFoundMessage(){
+        return $('.oxd-toast--info');
+    }
 }
 export default new SystemUser;
